@@ -1,0 +1,92 @@
+html{
+    height:100%;
+    background: radial-gradient(circle,#fff,#ccc);
+}
+#container{
+    height: 600px;
+    width: 700px;
+    background-color: whitesmoke;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius:5px;
+   
+    position: relative;
+}
+#score{
+    background-color: sandybrown;
+    color: dimgray;
+    padding: 10px;
+    position: absolute;
+    left: 650px;
+}
+
+
+#playground{
+    width: 650px;
+    height: 400px;
+    margin: 60px auto 10px auto;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+#instruction{
+    width:400px;
+    height:40px;
+    background-color: lightblue;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+
+
+
+#startreset{
+    text-align: center;
+    width:85px;
+    margin: 10px auto;
+    cursor: pointer;
+    padding:10px;
+    background-color: dodgerblue;
+    position: relative
+}
+#startreset:active{
+    top:4px;
+    border-radius: 2px;
+}
+#liferemaining{
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    
+    background-color: rgba(181,235,36,075);
+    border-radius: 2px;
+   /* visibility: hidden;*/
+    display: none;
+}
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(Orange,yellow);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top:160px;
+    left: 120px;
+    z-index: 2;
+    display: none;
+}
+.life{
+    width: 16px;
+    height: 13px;
+    margin: 5px 3px 0 3px;
+}
+.fruit{
+    display: none;
+    position: absolute;
+}
+
+
