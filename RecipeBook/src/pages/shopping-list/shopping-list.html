@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="onShowOptions($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Bevásárlólista</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form #f="ngForm" (ngSubmit)="onAddItem(f)">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Megnevezés</ion-label>
+        <ion-input type="text" name="ingredientName" placeholder="" ngModel required></ion-input>
+      </ion-item>
+       <ion-item>
+        <ion-label fixed>Mennyiség</ion-label>
+        <ion-input type="text" name="amount" placeholder="" ngModel></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button type="submit" block [disabled]="!f.valid">Hozzáadás a listához</button>
+  </form>
+  <ion-list padding>
+    <ion-item *ngFor="let item of listItems ;let i = index">
+      <h2>{{item.name}} {{ item.amount }}</h2>
+       <button ion-button  item-end color="danger"  (click)="onCheckItem(i)">
+        <ion-icon name="trash"  ></ion-icon>
+          
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>
