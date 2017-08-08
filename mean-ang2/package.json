@@ -1,0 +1,19 @@
+{
+  "name": "MEAN ",
+  "version": "1.0.0",
+  "description": "MEAN with angular4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Meggyesi András",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.2",
+    "mongoose": "^4.10.8"
+  }
+}
